@@ -1,0 +1,531 @@
+/* Base styles for mobile devices (default) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+}
+
+header {
+  background-color: #528bac;
+  color: white;
+  padding: 10px 0;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Navigation links section */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: block;
+  margin: 10px 0;
+  position: relative;
+}
+
+nav ul li a {
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.dropdown li {
+  display: block;
+  text-align: center;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: rgb(14, 13, 13);
+  display: block;
+  text-align: center;
+}
+
+.dropdown li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* This is for the middle section of my pages */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Us Page section */
+.about-us-section {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us-section h1,
+.about-us-section h2 {
+  color: #528bac;
+}
+
+.about-us-section p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-us-photo {
+  max-width: 40%;
+  margin-left: 20px;
+  align-self: center;
+}
+
+/* Welcome Page Section */
+.welcome-section {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-section h1,
+.welcome-section p {
+  font-family: sans-serif;
+  color: black;
+}
+
+/* My Mission Page Section */
+.mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.mission-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mission-photo {
+  max-width: 40%;
+  margin-left: 20px;
+  align-self: center;
+}
+
+/* My Story Page Section */
+.story-section {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.story-section h1,
+.story-section h2 {
+  color: #528bac;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.story-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.story-photo {
+  max-width: 90%;
+  margin: 10px 0;
+  align-self: center;
+}
+
+/* Banner section */
+.banner {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.banner p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Footer section */
+footer {
+  background-color: rgba(246, 211, 193, 1);
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+/* FAQs Page Section */
+.faq-heading {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.faq-table {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #528bac;
+}
+
+.faq-table th,
+.faq-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.faq-table th {
+  background-color: #528bac;
+  color: white;
+  font-weight: bold;
+}
+
+/*Contact Us page section */
+.contact-section {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-section h1,
+.contact-section h2 {
+  color: #528bac;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 20px;
+  background-color: #528bac;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #417ca6;
+}
+
+/* This is for the game page section -- Featured games slider */
+.main-container{
+  text-align: center;
+}
+
+.sliders{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 40px;
+}
+
+.slide{
+  min-width: 80%;
+  height: 320px;
+  overflow: hidden;
+  scroll-snap-align: center;
+  border-radius: 20px;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: blueviolet;
+  border-radius: 4px;
+}
+
+/* The dividing line for the game page section */
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin: 20px 0;
+  width: 100%
+}
+
+
+/* Media query for tablets (medium screens) */
+@media (min-width: 600px) {
+
+  /*Navigation links section as in the top*/
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    width: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+
+  .dropdown li {
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown li a {
+    padding: 10px 15px;
+    color: rgb(14, 13, 13);
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown li a:hover {
+    background-color: #f0f0f0;
+  }
+
+  /*About us section */
+  .about-us-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-photo {
+    max-width: 80%;
+    margin: 20px 0;
+  }
+
+  /* Welcome page section */
+  .welcome-section {
+    padding: 40px;
+  }
+
+  /* My Mission page section */
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-photo {
+    max-width: 80%;
+    margin: 20px 0;
+  }
+
+  /* My story page section */
+  .story-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-photo {
+    max-width: 80%;
+    margin: 20px 0;
+  }
+
+  /* Banner section */
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .banner p {
+    font-size: 1.3em;
+  }
+
+  /* Video page section */
+  .video-content {
+    flex-direction: column;
+  }
+
+  .video-description {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Contact Us section */
+  .contact-form form {
+    width: 100%;
+  }
+
+  .contact-details,
+  .contact-form {
+    text-align: center;
+  }
+
+  /* Game page section */
+  .game-reviews ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .game-reviews li {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .reviews-quotes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 45%;
+  }
+  
+  .game-reviews {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .kid-quote {
+    width: 45%;
+    text-align: left;
+  }
+}
+
+/* Media query for desktops (large screens) */
+@media (min-width: 1024px) {
+
+  /*Banner section */
+  .banner {
+    padding: 100px 0;
+  }
+
+  .banner h1 {
+    font-size: 3em;
+  }
+
+  .banner p {
+    font-size: 1.5em;
+  }
+
+  /* Welcome page section */
+  .welcome-section {
+    padding: 60px;
+  }
+
+  /* Game page section */
+  .game-reviews ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .game-reviews li {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .reviews-quotes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 45%;
+  }
+  
+  .game-reviews {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .kid-quote {
+    width: 45%;
+    text-align: left;
+  }
+}
