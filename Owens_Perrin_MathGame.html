@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Games</title> <!--Title of the page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
     <link rel="stylesheet" href="project.css">
 </head>
-
 <body>
     <header class="page-header"> <!--Top of the page -- navigation links-->
         <nav>
@@ -27,38 +27,25 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <!--Put stuff here-->
-        <div class="sliders">
-	        <div class="slide">
-		        <a href="Owens_Perrin_MatchingGame.html">
-			        <img src="matching game photo.png" alt="Matching Game">
-		        </a>
-	        </div>
-	        <div class="slide">
-		        <a href="Owens_Perrin_MathGame.html">
-			        <img src="animated math game photo without kids.png" alt="Math Game">
-		        </a>
-	        </div>
+    <main> <!--Middle part of the page and contains the game script-->
+        <div class="math-blaster">
+            <h2>Math Game</h2>
+            <div class="question">What is 8 + 5?</div>
+            <input type="number" class="answer-input" placeholder="Enter your answer">
+            <div class="game-controls">
+                <button onclick="submitAnswer()">Submit Answer</button>
+                <button onclick="startNewQuestion()">Next Question</button>
+                <button onclick="endGame()">End Game</button>
+            </div>
+            <div class="score-display">Score: 0</div>
+            <div class="game-over-message"></div>
         </div>
+        <script src="game.js"></script>
 
-
-        <hr class="solid">
-
-        <div class="reviews-quotes">
-            <!-- Game Reviews Section -->
-            <section class="game-reviews">
-                <h2>Game Reviews</h2>
-                <ul>
-                    <li>Math Game - ★★★★☆</li>
-                    <li>Memory Game - ★★★★★</li>
-                </ul>
-            </section>
-            <!-- Kid's Quote Section -->
-            <section class="kid-quote">
-                <h2>Quotes from Jimmy</h2>
-                <p>"Learning math is so much fun with Math Game!" - Jimmy, age 7</p>
-            </section>
+        <div class="audio-files">
+            <audio id="correct-sound" src="correct-156911.mp3"></audio>
+            <audio id="incorrect-sound" src="wrong-buzzer-6268.mp3"></audio>
+            <audio id="end-sound" src="negative_beeps-6008.mp3"></audio>
         </div>
     </main>
     <footer class="footer"> <!--Footer-->
