@@ -476,6 +476,38 @@ h2 {
     border: 1px solid green;
 }
 
+/*This is for the shop section*/
+img, input[type="image"], form {
+  border: none;
+  outline: none;
+  max-width: 100%; /* Ensures images do not exceed their container's width */
+}
+
+/* Style the main content borders (optional) */
+.product {
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.product img {
+  width: 100%; 
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Additional styling for buttons */
+input[type="image"] {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.product:hover {
+  border-color: #00bfff; /* Light blue on hover */
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.4); /* Soft shadow */
+}
+
 /* Media query for tablets (medium screens) */
 @media (min-width: 600px) {
 
@@ -612,6 +644,32 @@ h2 {
   /* Math Blaster Section*/
   .math-blaster .answer-input {
     font-size: 1.4em;
+  }
+
+  /*This is for the shop section*/
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: green;
   }
 }
 
